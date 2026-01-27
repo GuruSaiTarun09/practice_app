@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./databinding.component.css']
 })
 export class DatabindingComponent {
+  age: number = 20;
+  name: string = "guru"
 
+  cricket: string = "viratkaohli"
+  inputType: string = "radio"
+  message: string = "Hi"
+
+  submit() {
+    alert("success");
+  }
 }
