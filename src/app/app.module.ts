@@ -9,11 +9,15 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { DatabindingComponent } from './components/databinding/databinding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent,
+    DatabindingComponent
   ],
   imports: [
     BrowserModule,
