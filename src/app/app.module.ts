@@ -12,13 +12,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DatabindingComponent } from './components/databinding/databinding.component';
 import { FormsModule } from '@angular/forms';
+import { DirectivesComponent } from './components/directives/directives.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    DatabindingComponent
+    DatabindingComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,

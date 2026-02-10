@@ -1,10 +1,14 @@
+<!-- interpolation -->
 <p>data-binding works!</p>
 <p>Age is {{age}}</p>
 <p>My name is {{name}}</p>
 <p>fav cricket player is {{cricket}}</p>
+<!-- property binding -->
 <div [class]="cricket">men</div><br>
 <input type="text" [value]="cricket"><br><br>
 <!-- <input type="text" [(ngModel)]="message"> -->
+ <!-- two-way data binding -->
  <input type="text" [(ngModel)]="message">
 <input [type]="inputType" name="" id="">
+<!-- event binding -->
 <button (click)="submit()">submit</button>
