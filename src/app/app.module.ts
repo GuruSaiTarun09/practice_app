@@ -13,7 +13,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DatabindingComponent } from './components/databinding/databinding.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './components/directives/directives.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { VehicleComponent } from './components/vehicle/vehicle.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {HttpClientModule} from '@angular/common/http'
     LoginComponent,
     DashboardComponent,
     DatabindingComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    VehicleComponent
   ],
   imports: [
     BrowserModule,
