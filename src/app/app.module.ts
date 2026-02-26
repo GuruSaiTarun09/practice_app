@@ -14,7 +14,8 @@ import { DatabindingComponent } from './components/databinding/databinding.compo
 import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './components/directives/directives.component';
 import {HttpClientModule} from '@angular/common/http';
-import { VehicleComponent } from './components/vehicle/vehicle.component'
+import { VehicleComponent } from './components/vehicle/vehicle.component';
+import { VehiclePipe } from './pipe/vehicle.pipe'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { VehicleComponent } from './components/vehicle/vehicle.component'
     DashboardComponent,
     DatabindingComponent,
     DirectivesComponent,
-    VehicleComponent
+    VehicleComponent,
+    VehiclePipe
   ],
   imports: [
     BrowserModule,

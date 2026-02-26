@@ -1,3 +1,4 @@
+<!-- MOHITH - IT -->
 <!-- interpolation -->
 <p>data-binding works!</p>
 <p>Age is {{age}}</p>
@@ -12,3 +13,36 @@
 <input [type]="inputType" name="" id="">
 <!-- event binding -->
 <button (click)="submit()">submit</button>
+<!-- FED learning -->
+ <div >
+    <h4>one way data binding</h4>
+    <div>
+        <p>1.interpolation</p>
+        <p><b>{{names}}</b>from{{topic}}</p>
+    </div>
+        <div>
+        <p>1.property binding</p>
+        <input type="text" name="" id="" [value]="topic">
+        <div>
+            <img [src]="image" alt="">
+        </div>
+    </div>
+    <div>
+        <p>3.Event Binding</p>
+        <button (click)="onSave()">save</button>
+    </div>
+    <select (change)="onChange()">
+        <option value="Contry">Contry</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+    </select>
+    <div>
+        <p>4.Two Way Data Binding</p>
+        <div>
+            <input type="text"[(ngModel)]="random">
+            {{random}}
+        </div>
+    </div>
+ </div>
