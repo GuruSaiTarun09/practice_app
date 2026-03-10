@@ -6,6 +6,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./directives.component.css']
 })
 export class DirectivesComponent {
+  age:number=21;
+  names:string[]=["guru","sai","tarun"];
+    Products:any = [
+  {name:'pen', price:20},
+  {name:'marker', price:30},
+  {name:'pad', price:40},
+]
+   details:any=[
+    {name:'a', subject:'maths', marks:'100'},
+    {name:'b', subject:'science', marks:'40'},
+    {name:'c', subject:'social', marks:'70'},
+    {name:'d', subject:'hindi', marks:'40'},
+    {name:'e', subject:'sankrit', marks:'60'},
+   ]
+
+      countrys:string[]=["AP","TG","MP"];
+   isChecked:boolean=false;
+   onClick(){
+    this.isChecked=!this.isChecked;
+   }
    studentdetails:any=[
     {
       "id": 1,

@@ -1,3 +1,66 @@
+<!-- if condition -->
+
+ <h3 *ngIf="age>=18">major</h3>
+ <h3 *ngIf="age<18">minor</h3>
+
+    <!-- for loop -->
+ <p *ngFor="let name of names">my name {{name}}</p>
+
+ <ol>
+    <li *ngFor="let name of names">{{name}}</li>
+ </ol>
+ <table class="table table-bordered table-striped">
+      <thead class="table-dark">
+       <tr>
+           <th>name</th>
+           <th>price</th>
+           </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let Product of Products">
+        <td>{{Product.name}}</td>
+        <td>{{Product.price}}</td>
+        </tr>
+      </tbody>
+ </table>
+
+ <table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>name</th>
+            <th>subject</th>
+            <th>marks</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr *ngFor="let detail of details">
+                <td>{{detail.name}}</td>
+                <td>{{detail.subject}}</td>
+                <td>{{detail.marks}}</td>
+            </tr>
+    </tbody>
+ </table>
+
+ <select name="" id="">
+    <option value="" *ngFor="let country of countrys">{{country}}</option>
+ </select>
+
+ <div class="row text-center">
+    <div class="col-12 m-3">
+        <h3>Example of *ngIf vs if</h3>
+    </div>
+</div>
+ 
+<div class="row text-center">
+    <div class="col-4">
+        <div>
+            <input type="checkbox" (click)="onClick()">Terms and Conditions
+        </div>
+        <div>
+            <button *ngIf="isChecked" class="btn btn-success">submit</button>
+        </div>
+    </div>
+</div>
 <table class="table table-bordered table-striped">
     <thead class="table-dark">
        <tr>
